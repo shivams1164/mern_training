@@ -2,6 +2,7 @@
 
 
 
+
 body{
 
 height: 100vh;
@@ -18,12 +19,21 @@ background-color: rgb(78, 137, 189);
 
     & ol{
     background-color: blanchedalmond;
+
     }
     & ul:first-child{
         background-color: blueviolet;
     }
-    & ul:last-child{
-        background-color: rgb(122, 95, 147);
+    & ul:nth-child(3){
+        background-color: rgb(31, 194, 16);
+        & li:nth-child(2){
+            background-color: red;
+            
+        }
+    }
+     ul:last-child{
+        background-color: rgb(93, 56, 128);
+       
     }
 
 }

@@ -1,0 +1,23 @@
+
+
+
+
+
+body{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(78, 137, 189);
+    
+    }
+    .parent ul{
+        background-color: rgb(183, 133, 39);
+    
+        
+    }
+    .parent >ul{
+        background-color: rgb(210, 156, 57);
+    
+        
+    }
+    
