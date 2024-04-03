@@ -11,9 +11,4 @@ An inline element does not start on a new line.
 An inline element only takes up as much width as necessary.
 This is a <span> element inside a paragraph.
 
-use of h1 to h6
-xhtml vs HTML
-
-simple portfolio
  
- what happen web type googel.com in url

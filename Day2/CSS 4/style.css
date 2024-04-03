@@ -1,0 +1,19 @@
+.btn{
+    padding: 16px;
+    display: block;
+    border-radius: 8px;
+    margin: 10px auto;
+    border: none;
+    width: 20rem;
+}
+.btn-small{
+    color: rgb(157, 82, 233);
+    padding: 16px;
+    display: block;
+    border-radius: 8px;
+    margin: 10px auto;
+    border: none;
+    width: auto;
+    
+    font-size: 3rem;
+}

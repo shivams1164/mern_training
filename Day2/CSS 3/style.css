@@ -1,0 +1,28 @@
+#container {
+    padding: 10px;
+    border-bottom: 2px;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.parent {
+    font-size: 32px;
+}
+
+.child {
+    font-size: 2em;
+}
+#main{
+    font-size: 13px;
+}
+#child{
+    font-size: 2rem;
+    font-size: 2em;
+}
+
+
