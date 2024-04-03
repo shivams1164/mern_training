@@ -4,3 +4,7 @@ https://www.w3schools.com/css/css_specificity.asp
 
 CSS Unit
 https://www.w3schools.com/cssref/css_units.php
+
+
+css_pseudo_classes
+https://www.w3schools.com/css/css_pseudo_classes.asp
