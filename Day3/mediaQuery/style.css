@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.parent {
+    background-color: aquamarine;
+    color: brown;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 16px;
+    transition-property: height, width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+h2 {
+    height: 75px;
+    background-color: darkgray;
+}
+
+
+@media (800px <=width<=1200px) {
+
+    .parent {
+        background-color: chartreuse;
+        height: 200px;
+        width: 200px;
+
+    }
+
+    h2 {
+        height: 34px;
+
+    }
+}
+
+@media (200px <=width<=600px) {
+
+    .parent {
+        background-color: rgb(156, 21, 113);
+        height: 700px;
+        width: 700px;
+
+    }
+
+    h2 {
+        height: 34px;
+
+    }
+}

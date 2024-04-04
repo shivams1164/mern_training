@@ -1,0 +1,66 @@
+button {
+
+    scale: 2;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    animation-name: button-animation-type-1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+/* @keyframes button-animation-type-1 {
+
+    from {
+        top: 10px;
+        left: 40px;
+    }
+
+    to {
+        top: 200px;
+        left: 800px;
+
+    }
+} */
+
+
+@keyframes button-animation-type-1 {
+
+    0% {
+        top: 10px;
+        left: 40px;
+        color: aqua;
+    }
+
+    30% {
+        top: 200px;
+        left: 800px;
+        color: red;
+
+    }
+
+    50% {
+        top: 300px;
+        left: 100px;
+        color: black;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+
+
+    }
+
+    60% {
+        top: 300px;
+        left: 1000px;
+        color: aquamarine;
+    }
+
+    100% {
+        top: 10px;
+        left: 40px;
+    }
+}

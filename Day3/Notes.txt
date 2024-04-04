@@ -1,0 +1,25 @@
+
+
+
+https://www.w3schools.com/css/css_grid.asp
+
+grid area----  
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area
+
+
+ CSS position properties
+
+ Sticky
+ Fixed
+ Absolute
+Values
+https://css-tricks.com/almanac/properties/p/position/
+
+
+Media Query 
+
+always last query element  in css file, and it will be applied if no other media queries are met.
+
+CSS transition
+
+https://www.w3schools.com/css/css3_transitions.asp
