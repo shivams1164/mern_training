@@ -23,3 +23,22 @@ always last query element  in css file, and it will be applied if no other media
 CSS transition
 
 https://www.w3schools.com/css/css3_transitions.asp
+
+
+JavaScript
+
+
+Loosely typed
+Strictly typed
+
+
+Statically typed 
+
+Dynamically typed
+
+
+w3schools JavaScript
+https://www.w3schools.com/js/
+
+
+undefined means a variable is declared but not initialized, or a function doesn't return a value. null means a variable or property has no value or object.
