@@ -178,4 +178,120 @@
 // sum(2,4);
 
 
+// let a = 1;
+// let a = 0;
+// let a = undefined;
+// let a = null;
+// if (a) {
+//     console.log('true');
+// }
+// else {
+//     console.log('false')
+// }
+
+
+
+// function declaration
+// print();
+
+// function print() {
+//     console.log('---');
+
+// }
+// // function assignment  ( anonymous)
+// const a = function print() {
+//     console.log('++');
+// }
+// a();
+// print();
+
+
+
+// arrow function
+
+// prints();
+
+// () => {
+//     console.log('---');
+
+// }
+// // function assignment  ( anonymous)
+// const a = () => {
+//     console.log('++');
+// }
+// a();
+// prints();
+
+
+// Switch cASE
+
+
+// let a = 1;
+
+
+// switch (a) {
+//     case 1: {
+//         console.log("this is 1");
+//         break
+//     }
+//     case 2: {
+//         console.log("this is 2");
+//         break
+//     }
+//     case 3: {
+//         console.log("this is 3");
+//         break
+
+//     }
+//     case 4: {
+//         console.log("this is 4");
+
+//         break
+//     }
+//     default: console.log('default');
+
+// }
+
+
+//  OBJECTS
+
+// const obj = new Object();
+// obj[12] = 'twelve';
+// obj[1] = 'one';
+// obj[2] = 'two';
+// obj[10] = 'ten';
+// obj['name'] = 'helo';
+// console.log(obj);
+
+
+
+// const obj = {
+
+//     12: 'twelve',
+//     1: 'one',
+//     2: 'two',
+//     10: 'ten',
+//     name: 'hello',
+//     2.1: "234"
+
+// };
+// console.log(obj);
+
+
+
+// const obj = {
+//     'firstName': 'Ajay',
+//     'lastName': 'Singh',
+//     'Age': 20,
+// };
+
+// const fulname = obj.firstName + ' ' + obj.lastName+' '+ obj.Age;
+// console.log(fulname);
+
+
+// const x = prompt('Please tell me');
+// console.log(x);
+
+const firstName = prompt('enter the first name');
+const lastName = prompt('enter the last name');
 
