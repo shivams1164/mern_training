@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="margin: 12px;">
+        <form action="" onsubmit="submitForm(event)">
+            <label for="">FirstName</label>
+            <input type="text" id="firstName" name="FirstName" placeholder="firstName"
+                onkeydown="firstNameChange(event)"><br><br>
+            <label for="">LastName </label>
+            <input type="text" name="LastName" id="LastName" placeholder="LastName"><br><br>
+            <label for="">Age </label>
+            <input type="number" name="Age" id="age" placeholder="age"  onkeydown="ageCheck(event)"><br><br>
+            <label for="">Hobbies</label><br><br>
+            <label for="">WebD</label>
+            <input type="checkbox" name="Hobbies" value="webD">
+            <label for="">Sports</label>
+            <input type="checkbox" name="Hobbies" value="Sports">
+            <label for="">Drawing</label>
+            <input type="checkbox" name="Hobbies" value="Drawing">
+            <br>
+            <button>Submit</button>
+        </form>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

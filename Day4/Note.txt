@@ -1,0 +1,61 @@
+console.log(typeof(arr));   ---> Array is object..
+
+
+https://www.w3schools.com/js/js_arrays.asp
+
+arrays and object
+
+
+js_function_invocation
+
+https://www.w3schools.com/js/js_function_invocation.asp
+
+
+For of and for in
+For Loop in js
+
+for of work with  array 
+
+for in work with arra and object both
+
+
+DOM tree ke according select hota hai
+
+
+iterable and array in js
+They have different purposes and functionalities:
+
+arrays are rooms, iterator is the room guards, allowing to move to next rooms
+Iterator allows you to traverse, e.g. next() can be called
+Iterator does not allow you to access via index, e.g. iterator[0]
+enter image description here
+
+
+Set Attributes
+
+https://www.w3schools.com/jsref/met_element_setattribute.asp
+
+Append the text in  div tag using JavaScript
+
+html = `<div id="myDiv"></div>`;
+document.body.innerHTML += html;
+var x = document.getElementById("myDiv");
+x.setAttribute("style", "color:blue");
+
+What is shallow copy and deep copy in JavaScript ?
+
+remove function
+
+
+JavaScript Node Vs Element
+
+JS Events
+
+https://developer.mozilla.org/en-US/docs/Web/Events
+
+event deligation in js
+
+https://www.geeksforgeeks.org/event-delegation-in-javascript/
+
+
+What is First Class Citizen in JavaScript ?

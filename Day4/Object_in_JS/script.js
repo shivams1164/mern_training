@@ -23,7 +23,48 @@
 // var user;
 // user = prompt("Enet");
 
-var sc = prompt("enter");
-// console.log(sc);
-document.getElementById("demo").innerHTML = sc
-document.title = sc;
+// var sc = prompt("enter");
+// // console.log(sc);
+// document.getElementById("demo").innerHTML = sc
+// document.title = sc;
+
+
+// let a  =   new String("Hello");
+// let b= "Hello";
+
+// if (a===b) {
+//     console.log("yes");
+//     } else{
+//         console.log("no")
+// }
+
+
+
+// const obj = {
+//     name: 'shivam',
+//     lastname: 'singh',
+// };
+const obj = {
+    "name": "shivam",
+    "lastname": "singh"
+};
+// console.log(obj);
+
+
+const str = document.write(JSON.stringify);
+console.log(str);
+
+
+
+
+// let obj = {
+//     "name": "shivan",
+//     "agess": "sagsag",
+// }
+
+// obj = {
+//     "ages": 25,
+
+// }
+// obj.age = 21;
+// console.log(obj);
