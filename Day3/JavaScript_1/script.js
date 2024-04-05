@@ -152,11 +152,30 @@
 // function in JS
 
 
-function test(x) {
-    console.log(x);
+// // function test(x = "nothing is here") {  //default value
+// function test(x = "nothing is here") {
+//     console.log(x);
 
-}
+// }
 
-const s = 'hello';
+// const s = 'hello';
+// // test(s);
 // test(s);
-test("hello");
+// // test("hello");
+
+
+
+// function sum(a, b) {
+//     if (a && b) {
+//         console.log(a + b);
+//     }
+//     else {
+//         console.log(a)
+//     }
+
+//     // console.log(a + b);
+// }
+// sum(2,4);
+
+
+
