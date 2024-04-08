@@ -1,0 +1,59 @@
+Javascript code exection
+
+settime out
+
+
+// setTimeout(function(),time );
+
+asynchronous javascript
+
+|                |
+|                |
+|                |
+|                |
+|                |
+|                |
+|--------------- |  read all the line
+|      GEC End   |
+| ______________ |
+|     GEC Start  |  
+|________________|
+
+setTimeout(printPtetty, 8000);
+empty for  10 sec
+
+
+|                |
+|                |
+|                |
+|                |
+|                |
+|                |
+|                |  read all the line
+|                |
+| ______________ |
+|                |  
+|________________|
+
+
+
+
+
+Event handling
+
+
+
+fetch API
+
+star;
+fetch ();
+end;
+
+.then (response) => {
+    if (!response.ok) throw response;
+    return response.text();
+}
+.catch (error) => console.log('Error: ' + error);
+
+
+https://dummyjson.com/
