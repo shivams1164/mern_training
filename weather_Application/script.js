@@ -10,7 +10,7 @@ locationButton.addEventListener("click", fetchWeather);
 function fetchWeather() {
     const location = locationInput.value.trim();
 
-    const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=us&key=HHF73PNR4YE3THCLV8D3GNAZU`;
+    const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=uk&key=HHF73PNR4YE3THCLV8D3GNAZU`;
     fetch(url)
         .then(res => res.json())
         .then((data) => {
@@ -66,11 +66,11 @@ function renderUI(data) {
     tableContainer.appendChild(table);
 
     const currentTemp = days[0].tempmax;
-    temperatureDiv.innerText = `Current Temperature: ${fahrenheitToCelsius(currentTemp)}°C`;
+    temperatureDiv.innerText = `Current Temperature: ${currentTemp}°C`;
 }
 
-function fahrenheitToCelsius(fahrenheit) {
-    return ((fahrenheit - 32) * 5 / 9).toFixed(2);
-}
+// function fahrenheitToCelsius(fahrenheit) {
+//     return ((fahrenheit - 32) * 5 / 9).toFixed(2);
+// }
 
 fetchWeather();

@@ -1,0 +1,49 @@
+
+
+1 start
+
+2 settimeout --
+
+3 end
+
+
+stack-->
+
+console.log('start');
+
+setTimeout(()=>{console.log('timeout...');},0)
+
+console.log('intermediant');
+
+console.log('end');
+
+callback -->stack
+----------------
+start
+intermediant
+end
+timeout
+
+
+setTimeout(() => { console.log('timeout 1 ..'); }, 5000)
+console.log('start');
+setTimeout(() => { console.log('timeout 2 ..'); }, 4999)
+console.log('intermediant');
+console.log('end');
+
+
+callback -->stack
+----------------
+start
+intermediant
+end
+timeout2
+timeout1
+
+
+Promise 
+Inversion of Control (IoC) is an abstract programming principle based on the flow of control (execution of statements/instructions) that should be fully managed by the specific implementation of the framework, which is external to your code.
+
+--> giving Control to some other function
+
+
