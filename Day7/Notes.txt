@@ -1,0 +1,41 @@
+File system--->
+        Promise example
+        Callback example
+        Synchronous example
+
+const data = fs.readFileSync('myReadme.txt');
+console.log(data);   //data packet comes from the file show in the form of buffer
+
+
+// to convert the buffer to string
+console.log(data.toString());
+
+
+readFileSync -> 
+sync--> refers the blocking behaviour of the main thread 
+(avoid this because it will till the file read)
+
+
+
+URL an uri
+
+
+
+https://www.amazon.com/products/electronics?priceit=20000
+
+      ----------------                       --------------   
+----                    ---------------------------------
+protocol  Origin                Route path        Query
+
+
+cmd -->
+
+ping google.com -> to get the ip of the website
+
+
+http//localhost:4000
+
+
+object ---> jsonstring
+
+json--> object

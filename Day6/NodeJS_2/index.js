@@ -50,11 +50,12 @@ async function callAPI() {
             console.log("timeout 1....");
         }, 3000);
     })
+
     const pr2 = await new Promise((res, req) => {
         console.log('Promise 2 ');
         setTimeout(() => {
             console.log("timeout 2....");
-        }, 5000);
+        }, 3000);
     })
 
 }
