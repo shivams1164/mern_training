@@ -56,12 +56,33 @@ const htmlTemplate = `
     <html lang="en">    
         <head>
             <style>
+            *{
+                margin: 0;
+                padding: 0;
+
+
+            }
             .product-card{
                 width:600px;
                 max-width:600px;
                 margin:20px auto;
                 border:3px double brown;
                 border-radius:3px;
+                display: flex;
+                flex-direction: row;
+                // justify-content: center;
+                // align-items: c;
+                padding: 10px;
+                background-color: skyblue;
+                }
+            .product-card h3{
+                font-size: 20px;
+            }
+            .imagess{
+               height: 180px;
+               width:200px;
+
+             
             }
             </style>
         </head>
@@ -74,7 +95,12 @@ const htmlTemplate = `
 const cardTemplate = `
     <div class="product-card">
         <h3>___Title___</h3>
-        <p">__Info__</p>
+        <p>__Info__</p>
+        <h3>Price</h3>
+        <p>__Price__</p>
+        <h3>Rating</h3>
+        <p>__Rating__</p>
+        <img src="__img__" alt="product image" class="imagess" >
         </div>
     `
 // const card1 = cardTemplate.replace('___Title___', products[0].title).replace('__Info__', products[0].description)
@@ -86,6 +112,9 @@ const all_card = products.map(elem => {
     let newcard = cardTemplate;
     newcard = newcard.replace('___Title___', elem.title)
     newcard = newcard.replace('__Info__', elem.description)
+    newcard = newcard.replace('__Price__', elem.price)
+    newcard = newcard.replace('__Rating__', elem.rating)
+    newcard = newcard.replace('__img__', elem.thumbnail)
     return newcard
 
 })
