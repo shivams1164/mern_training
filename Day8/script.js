@@ -32,6 +32,7 @@ for (let i = 0; i < dataObj.length; i++) {
 }
 
 result = result.join('');
+// result = result.join('');
 
 // console.log(result);
 const server = http.createServer((req, res) => {

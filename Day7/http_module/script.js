@@ -46,6 +46,7 @@ const data = fs.readFileSync('data.json', 'utf-8')
 
 const dataObj = JSON.parse(data);
 // console.log(dataObj);
+// console.log(dataObj);
 
 const products = dataObj.products
 
