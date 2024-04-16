@@ -1,9 +1,10 @@
 {
-  "name": "day8",
+  "name": "getandpost",
   "version": "1.0.0",
-  "main": "script.js",
+  "description": "",
+  "main": "express.js",
   "scripts": {
-    "start": "npx nodemon script",
+    "start": "npx nodemon express",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +13,5 @@
   "dependencies": {
     "express": "^4.19.2",
     "nodemon": "^3.1.0"
-  },
-  "description": ""
+  }
 }
