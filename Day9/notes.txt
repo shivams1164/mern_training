@@ -1,0 +1,9 @@
+
+
+
+express js is a middleware...
+request comes in ,response goes out
+
+route
+
+  

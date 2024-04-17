@@ -1,37 +1,12 @@
-const express = require('express');
-const fs = require('fs');
+
 const fsPromises = require("fs/promises");
-const app = express()
 
-
-// ---------------------   Through callback, read file synce
-
-// app.get('/api/products', (req, res) => {
-//  const data = fs.readFileSync('data.json', 'utf-8');
-
-//     // console.log(data);
-//     const arr = JSON.parse(data).products;
-//     res.json(
-//         {
-//             status: 'success',
-//             results: arr.length,
-//             data: {
-//                 products: arr,
-
-//             }
-//         }
-//     );
-// });
-
-///--------------------------Through async await
-
-
-
-app.get('/api/products', async (req, res) => {
+const getAllProducts = async (req, res) => {
     const data = await fsPromises.readFile('data1.json', 'utf-8')
     // console.log(data);
-    const arr = JSON.parse(data).products;
-    // const arr = JSON.parse(data);
+    // const arr = JSON.parse(data).products;
+    const arr = JSON.parse(data);
+    res.status(200);
     res.json(
         {
             status: 'success',
@@ -42,18 +17,14 @@ app.get('/api/products', async (req, res) => {
             }
         }
     );
-});
+};
 
-app.use(express.json());
-
-
-
-app.post('/api/products', async (req, res) => {
+const addProduct = async (req, res) => {
 
     // console.log(Object.keys(res));
     // console.log(req.body);
     const data = req.body;
-    // data.id = 121;
+    // data.id = 121;s
     // console.log(data);
 
     const db = await fsPromises.readFile('data1.json', 'utf-8')
@@ -88,10 +59,10 @@ app.post('/api/products', async (req, res) => {
     // res.send("Working progress")
 
 
-});
+};
 
 
-app.put('/api/products/:id', async (req, res) => {
+const updateProduct = async (req, res) => {
 
     const arr = JSON.parse(await fsPromises.readFile('data1.json', 'utf-8'))
     const reqId = parseInt(req.params.id);
@@ -114,28 +85,12 @@ app.put('/api/products/:id', async (req, res) => {
 
     );
 
-});
-
-
-app.delete('/api/products/:id', async (req, res) => {
-    const arr = JSON.parse(await fsPromises.readFile('data1.json', 'utf-8'))
-    const reqId = parseInt(req.params.id);
-    const newArr = arr.filter((elem) => {
-        if (elem.id === reqId) return false;
-        else return true;
-    })
-
-    fsPromises.writeFile('data1.json', JSON.stringify(newArr));
-    res.status(204);
-    res.json({
-        status: "Success",
-        data: {
-            newProduct: null,
-        }
-    })
-})
+};
 
 
 
-
-app.listen(1164);
+module.exports = {
+    getAllProducts,
+    addProduct,
+    updateProduct
+}
