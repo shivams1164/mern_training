@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose');
 const productRouter = require('./routes/productRoute.js')
 const productModel = require('./models/productsModel.js')
+const userRouter = require('./routes/userRoute.js')
 
 const app = express();
 
@@ -17,8 +18,9 @@ mongoose.connect(dbLink)
     .then(() => console.log('Connected!'));
 
 
-
+app.use(express.json());
 app.use('/api/products', productRouter);
+app.use('/api/users', userRouter)
 
 app.listen(1164, (req, res) => {
     console.log("Server started");
