@@ -4,6 +4,10 @@ const fs = require('fs')
 const fsPromises = require("fs/promises");
 const ProductController = require('./controllers_/productsControllers.js')
 const userController = require('./controllers_/userController.js')
+const productRouter = require('./route/productRoute.js')
+const userRouter = require('./route/userRoute.js')
+
+
 
 app.use(express.json())
 
@@ -68,11 +72,38 @@ app.listen(1164, () => {
 
 
 
-app.route('/api/products')
-    .get(ProductController.getAllProducts)
-    .post(ProductController.addProduct);
+// app.route('/api/products')
+//     .get(ProductController.getAllProducts)
+//     .post(ProductController.addProduct);
 
-app.route('/api/user')
-    .get(userController.getUser)
-    .post(userController.addUser)
-    .put(userController.updateUser)
+// app.route('/api/user')
+//     .get(userController.getUser)
+//     .post(userController.addUser)
+//     .put(userController.updateUser)
+
+
+
+
+
+// const productRouter = express.Router();
+// const userRouter = express.Router();
+
+
+// app.use('/api/products', productRouter);
+// productRouter.route('/')
+//     .get(ProductController.getAllProducts)
+//     .post(ProductController.addProduct);
+
+// app.use('/api/user', userRouter);
+// userRouter.route('/')
+//     .get(userController.getUser)
+//     .post(userController.addUser)
+
+// app.use('/api/products', productRouter);
+
+
+
+
+app.use('/api/products', productRouter);
+
+app.use('/api/user', userRouter)

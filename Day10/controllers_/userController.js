@@ -15,7 +15,7 @@ const addUser = (req, res) => {
     });
 }
 
-const updateUser= (req, res) => {
+const updateUser = (req, res) => {
     res.status(501);
     res.json({
         status: 'error',
@@ -23,7 +23,7 @@ const updateUser= (req, res) => {
     });
 }
 
-const patchUser =  (req, res) => {
+const patchUser = (req, res) => {
     res.status(501);
     res.json({
         status: 'error',
@@ -31,7 +31,7 @@ const patchUser =  (req, res) => {
     });
 }
 
-module.exports={
+module.exports = {
     addUser,
     updateUser,
     getUser,
