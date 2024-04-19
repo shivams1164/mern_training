@@ -1,20 +1,55 @@
 
 
+const { query } = require('express');
 const productModel = require('../models/productsModel')
 
 const getAllProducts = async (req, res) => {
 
-    const data = await productModel.find();
-    // console.log(data);
+    // const q = req.query
+    // console.log(q);
+    // const data = await productModel.find(q);
+
+    // res.send({
+    //     status: 'success',
+    //     results: data.length,
+    //     message: "All Products",
+    //     data: {
+    //         products: data,
+    //     }
+    // })
+
+    // const q = req.query;
+    // console.log(q);
+    // let query = productModel.find(q);
+    // // console.log(query);
+    // // query = query.sort('price')
+    // // query = query.sort('-price title')                //for descending order
+    // query = query.sort('price title')                //sort by price if same and then sort by title
+    // query = query.sort()
+    // const products = await query;
+
+
+    // console.log((q, sort));
+    const { sort, ...q } = req.query
+    const sortStr = sort.split(',').join(' ')
+    let query = productModel.find(q);
+    query = query.sort(sortStr)
+
+    console.log(sortStr);
+
+    const products = await query;
 
     res.send({
         status: 'success',
-        results: 0,
+        results: products.length,
         message: "All Products",
         data: {
-            products: data,
+            products: products,
         }
     })
+
+
+
 }
 
 const addProduct = async (req, res) => {
