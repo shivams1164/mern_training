@@ -18,6 +18,8 @@ const getAllProducts = async (req, res) => {
     //     }
     // })
 
+
+
     // const q = req.query;
     // console.log(q);
     // let query = productModel.find(q);
@@ -30,21 +32,67 @@ const getAllProducts = async (req, res) => {
 
 
     // console.log((q, sort));
-    const { sort, ...q } = req.query
-    const sortStr = sort.split(',').join(' ')
-    let query = productModel.find(q);
-    query = query.sort(sortStr)
+    // const { sort, ...q } = req.query
+    // const sortStr = sort.split(',').join(' ')
+    // let query = productModel.find(q);
+    // query = query.sort(sortStr)
 
-    console.log(sortStr);
+    // console.log(sortStr);
+
+    // res.send({
+    //     status: 'success',
+    //     results: products.length,
+    //     message: "All Products",
+    //     data: {
+    //         products: products,
+    //     }
+    // })
+
+
+    //---------------paging---------------------
+
+    // const { sort='price', ...q } = req.query
+    // const sortStr = sort.split(',').join(' ')
+    // let query = productModel.find(q);
+    // query = query.sort(sortStr)
+
+    // const skip=0;
+    // const limit =3;
+
+    // query = query.skip(skip).limit(limit)
+    // console.log(sortStr);
+
+    // const products = await query;
+
+    // ---------------------------------------------------------------------
+    const { sort = 'price', page = 1, pagesize = 3, fields = "title, price", ...q } = req.query
+    const sortStr = sort.split(',').join(' ')
+    const fieldStr = fields.split(',').join(' ')
+    let query = productModel.find(q);
+    // for select
+    // query = query.select('title')
+
+    //for deselect
+    // query = query.select('-title')
+
+    query = query.sort(sortStr)
+    const skip = pagesize * (page - 1);
+    const limit = pagesize;
+    query = query.skip(skip).limit(limit)
+    query = query.select(fieldStr)
 
     const products = await query;
+    const totalResults = await productModel.countDocuments(q);
+
 
     res.send({
         status: 'success',
         results: products.length,
-        message: "All Products",
+        totalResults: totalResults,
+        page: page,
+        pagesize: pagesize,
         data: {
-            products: products,
+            products,                          //key ad value ka name same ho to ek bar likhne pr bhi chalta hai
         }
     })
 

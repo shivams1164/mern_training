@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 
 const reviewSchema = mongoose.Schema({
-    productname: {
+
+    productid: {
         type: String,
         required: true,
     },
-    username: {
+    userid: {
         type: String,
         required: true,
     },

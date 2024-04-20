@@ -13,7 +13,7 @@
 mongodb+srv://shivam8960ss:hvHkkpEXrLsQeUmw@cluster0.eimdsfm.mongodb.net/
 
 
-schema -->  {
+schema -->  
     name : {
         type : String,
         required : true
@@ -128,3 +128,30 @@ Nodejs
 http://127.0.0.1:1164/api/products?sort=-price   
 
 codeforce__> 700=800 problem
+
+
+
+paging ->
+
+skip()   and limit() --> available  in mongooes
+
+
+example we have 7 item
+i want to show 3 item in one page
+
+page    .skip              .limit
+1        0                   3
+2        3                   6
+3        7                   7
+
+
+http://127.0.0.1:1164/api/products?page=3&pagesize=4
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+select the specific object from the database
+
+
+

@@ -87,9 +87,64 @@ const deleteReview = async (req, res) => {
     }
 }
 
+const getOneReview = async (req, res) => {
+    try {
+        const reviewId = req.params.id;
+        const review = await reviewModel.findById(reviewId);
+        if (!review) {
+            res.status(404).json({
+                status: 'fail',
+                message: 'Review not found',
+            });
+            return;
+        }
+        res.status(200).json({
+            status: 'success',
+            message: 'Review found',
+            data: {
+                review: review,
+            }
+        });
+    } catch (err) {
+        res.status(500).json({
+            status: 'fail',
+            message: err.message,
+        });
+    }
+}
+
+const getReviewsByProductId = async (req, res) => {
+    try {
+        const productId = req.params.productId;
+        const reviews = await reviewModel.find({ productId: productId });
+        if (reviews.length === 0) {
+            res.status(404).json({
+                status: 'fail',
+                message: 'No reviews found for this product',
+            });
+            return;
+        }
+        res.status(200).json({
+            status: 'success',
+            message: 'Reviews found',
+            data: {
+                reviews: reviews,
+            }
+        });
+    } catch (err) {
+        res.status(500).json({
+            status: 'fail',
+            message: err.message,
+        });
+    }
+}
+
 module.exports = {
     getAllReviews,
     createReview,
     updateReview,
-    deleteReview
+    deleteReview,
+    getOneReview,
+    getReviewsByProductId 
 };
+
