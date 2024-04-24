@@ -92,7 +92,7 @@ const getAllProducts = async (req, res) => {
         page: page,
         pagesize: pagesize,
         data: {
-            products,                          //key ad value ka name same ho to ek bar likhne pr bhi chalta hai
+            products,                    
         }
     })
 
