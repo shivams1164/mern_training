@@ -1,0 +1,157 @@
+
+
+        mongoDB --> nosql database
+        nosql database -->
+
+        document based database --> mongoDB
+
+        horizontal scaling -->
+        
+        BSON->Binary encoded Javascript Object Notation
+    
+
+mongodb+srv://shivam8960ss:hvHkkpEXrLsQeUmw@cluster0.eimdsfm.mongodb.net/
+
+
+schema -->  
+    name : {
+        type : String,
+        required : true
+    },
+    email : {
+        type : String,
+        required : true
+    },
+    password : {
+        type : String,
+        required : true
+    },
+    date : {
+        type : Date,
+        default : Date.now
+}
+
+schema se banta hai model--> uske through object and document banta hai
+
+
+MVC--> Architecture
+
+
+app-->---------------------------------------------------------------------------------------------------------------------------------------
+
+express
+router
+app express
+app.use
+
+const express = require("express");
+const productsRouter = require('./routes/productsRoutes.js');
+const app = express();
+
+app.use(express.json());
+app.use('/api/products', productsRouter)
+
+module.exports = app;
+
+
+server---------------------------------------------------------------------------------------------------------------------------------
+
+mongooes
+
+import  > app.Javascript
+
+const mongoose = require('mongoose');
+const app = require('./app.js');
+const dbDataUpload = require('./configs/db_data.js')
+
+const url = 'mongodb+srv://$_USERNAME_$:$_PASSWORD_$@cluster0.dpithd6.mongodb.net/$_DB_NAME_$?retryWrites=true&w=majority&appName=Cluster0';
+const databaseUser = 'likhileshexplorin';
+const databasePassword = 'abcd1234';
+const databaseName = 'Amazon-Backend';
+
+let dbLink = url.replace("$_USERNAME_$", databaseUser);
+dbLink = dbLink.replace("$_PASSWORD_$", databasePassword);
+dbLink = dbLink.replace("$_DB_NAME_$", databaseName);
+
+mongoose.connect(dbLink).then(() => {
+  console.log('-------- Database Connected --------');
+//   dbDataUpload();
+});
+
+app.listen(1400,() => {
+    console.log('----------- App Started -----------')
+});
+
+
+
+
+predefind data==================================================================================================================================
+db_data.js
+
+
+
+db_dummy_data.js
+
+
+Query----------------------------------------
+
+http://127.0.0.1:1164/api/products?price[$gt]=3000
+
+http://127.0.0.1:1164/api/products?price[$gt]=2000&&price[$lt]=6500
+
+
+
+
+
+                                Node.JS
+client                          server -------->    req      DB atlas
+                                        <-------    res                
+
+
+Nodejs
+
+
+            q= Query
+            q = q.find(name)
+            q = q.find(price)
+            q = q.find(keyword)
+            const result await q;  -------> then send the request to the database
+
+  ------------ await na likhne par query database pr jayega hi nhi -----------
+
+
+
+              q = q.find(name)&&q.find(price) && q = q.find(keyword)
+
+
+
+http://127.0.0.1:1164/api/products?sort=-price   
+
+codeforce__> 700=800 problem
+
+
+
+paging ->
+
+skip()   and limit() --> available  in mongooes
+
+
+example we have 7 item
+i want to show 3 item in one page
+
+page    .skip              .limit
+1        0                   3
+2        3                   6
+3        7                   7
+
+
+http://127.0.0.1:1164/api/products?page=3&pagesize=4
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+select the specific object from the database
+
+
+

@@ -1,0 +1,28 @@
+
+JSX
+
+DOM manipulation is 
+
+react use virtual DOM
+
+react dom cdn
+
+unique karne ke liye key dena padta hai
+
+har element ko uska unique key dete hai
+
+jo key same hone pr render saame rhta hai
+
+agar key change hota hai to dom me bs vahi change hota hai
+
+
+JSX
+
+react element --> Obj --> virual DOm--> Real DOM
+
+---------------------------------
+
+Webpack in react is a JavaScript module bundler that is commonly used with React to bundle and manage dependencies. It takes all of the individual JavaScript files and other assets in a project, such as images and CSS, and combines them into a single bundle that can be loaded by the browser.
+
+Building a web app with Parcel
+

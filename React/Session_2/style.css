@@ -1,0 +1,275 @@
+* {
+    background-color: rgb(229, 235, 235);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    color: rgb(134, 20, 20);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-item a {
+    color: rgb(36, 57, 174);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-item a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel .legend {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+
+
+.search-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* src/components/Footer.css */
+
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+
+
+
+/* src/components/Category.css */
+
+.category-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.category-link {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.category-link:hover {
+    background-color: #0056b3;
+}
+
+/* src/pages/productPage/productMainPage.css */
+
+.product-container {
+    display: flex;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-details {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.product-name {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #b12704;
+}
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.buy-button,
+.cart-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button {
+    background-color: #ff9900;
+    color: #fff;
+}
+
+.buy-button:hover {
+    background-color: #e68a00;
+}
+
+.cart-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.cart-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* src/components/FeatureProduct.css */
+
+.feature-product-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.product-price {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #b12704;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #e68a00;
+}
