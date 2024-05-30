@@ -75,10 +75,21 @@ const arr = [
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Homepage from './src/pages/homepage/homepage';
+import HomepageSearch from './src/pages/searchpage/homepageSearch';
+import ProductMain from './src/pages/productPage/productMainPage';
+
+
 const parent = document.getElementById('root');
 const root = ReactDOM.createRoot(parent);
 const App = () => {
-    return (<Homepage/>)
+    let path = window.location.pathname;
+    return ((
+        <>
+            {path === '/' && <Homepage />}
+            {path === '/products' && <ProductMain />}
+            {path === '/search' && <HomepageSearch />}
+        </>
+    ))
 }
 root.render(<App />)
 

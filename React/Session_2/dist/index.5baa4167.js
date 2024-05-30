@@ -2992,6 +2992,10 @@ var _reactDom = require("react-dom");
 var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
 var _homepage = require("./src/pages/homepage/homepage");
 var _homepageDefault = parcelHelpers.interopDefault(_homepage);
+var _homepageSearch = require("./src/pages/searchpage/homepageSearch");
+var _homepageSearchDefault = parcelHelpers.interopDefault(_homepageSearch);
+var _productMainPage = require("./src/pages/productPage/productMainPage");
+var _productMainPageDefault = parcelHelpers.interopDefault(_productMainPage);
 const arr = [
     {
         title: "Asus",
@@ -3017,16 +3021,31 @@ const arr = [
 const parent = document.getElementById("root");
 const root = (0, _reactDomDefault.default).createRoot(parent);
 const App = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageDefault.default), {}, void 0, false, {
-        fileName: "app.js",
-        lineNumber: 81,
-        columnNumber: 13
-    }, undefined);
+    let path = window.location.pathname;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            path === "/" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageDefault.default), {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 88,
+                columnNumber: 30
+            }, undefined),
+            path === "/products" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productMainPageDefault.default), {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 89,
+                columnNumber: 38
+            }, undefined),
+            path === "/search" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageSearchDefault.default), {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 90,
+                columnNumber: 36
+            }, undefined)
+        ]
+    }, void 0, true);
 };
 _c = App;
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "app.js",
-    lineNumber: 83,
+    lineNumber: 94,
     columnNumber: 13
 }, undefined)) // import React from 'react';
  // import ReactDOM from 'react-dom';
@@ -3055,7 +3074,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./src/pages/homepage/homepage":"gTUEJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./src/pages/homepage/homepage":"gTUEJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/pages/searchpage/homepageSearch":"5lvuP","./src/pages/productPage/productMainPage":"45hc5"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -30594,6 +30613,273 @@ $RefreshReg$(_c, "FeatureProduct");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequirec41b")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5lvuP":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a444 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a444.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _footer = require("../homepage/footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _navbar = require("../homepage/navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _searchBox = require("./searchBox");
+var _searchBoxDefault = parcelHelpers.interopDefault(_searchBox);
+const HomepageSearch = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
+                fileName: "src/pages/searchpage/homepageSearch.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchBoxDefault.default), {}, void 0, false, {
+                fileName: "src/pages/searchpage/homepageSearch.js",
+                lineNumber: 9,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                fileName: "src/pages/searchpage/homepageSearch.js",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/searchpage/homepageSearch.js",
+        lineNumber: 7,
+        columnNumber: 9
+    }, undefined);
+};
+_c = HomepageSearch;
+exports.default = HomepageSearch;
+var _c;
+$RefreshReg$(_c, "HomepageSearch");
+
+  $parcel$ReactRefreshHelpers$a444.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../homepage/footer":"i67uX","../homepage/navbar":"btWtr","./searchBox":"f1yHl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"f1yHl":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$61fc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$61fc.prelude(module);
+
+try {
+// src/components/SearchBox.js
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const SearchBox = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "search-box-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "text",
+                placeholder: "Search Product ....",
+                className: "search-input"
+            }, void 0, false, {
+                fileName: "src/pages/searchpage/searchBox.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "search-button",
+                children: "Search"
+            }, void 0, false, {
+                fileName: "src/pages/searchpage/searchBox.js",
+                lineNumber: 9,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/searchpage/searchBox.js",
+        lineNumber: 7,
+        columnNumber: 9
+    }, undefined);
+};
+_c = SearchBox;
+exports.default = SearchBox;
+var _c;
+$RefreshReg$(_c, "SearchBox");
+
+  $parcel$ReactRefreshHelpers$61fc.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"45hc5":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4b73 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4b73.prelude(module);
+
+try {
+// src/pages/productPage/productMainPage.js
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _navbar = require("../homepage/navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _footer = require("../homepage/footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _product = require("./product");
+var _productDefault = parcelHelpers.interopDefault(_product);
+const ProductMain = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
+                fileName: "src/pages/productPage/productMainPage.js",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productDefault.default), {}, void 0, false, {
+                fileName: "src/pages/productPage/productMainPage.js",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                fileName: "src/pages/productPage/productMainPage.js",
+                lineNumber: 13,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/productPage/productMainPage.js",
+        lineNumber: 10,
+        columnNumber: 9
+    }, undefined);
+};
+_c = ProductMain;
+exports.default = ProductMain;
+var _c;
+$RefreshReg$(_c, "ProductMain");
+
+  $parcel$ReactRefreshHelpers$4b73.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../homepage/navbar":"btWtr","../homepage/footer":"i67uX","./product":"8ina3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8ina3":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$aa58 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$aa58.prelude(module);
+
+try {
+// src/pages/productPage/productMainPage.js
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const ProductInfo = ()=>{
+    const product = {
+        name: "Samsung Galaxy Tab S9 FE+",
+        description: "Samsung Galaxy Tab S9 FE+ 31.50 cm (12.4 inch) Display, RAM 8 GB, ROM 128 GB Expandable, S Pen in-Box, WiFi+5G, IP68 Tablet, Gray",
+        price: "\u20B954,999",
+        image: "https://m.media-amazon.com/images/I/31OVAmHjLPL._SX300_SY300_QL70_FMwebp_.jpg"
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "product-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "product-image",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: product.image,
+                    alt: product.name
+                }, void 0, false, {
+                    fileName: "src/pages/productPage/product.js",
+                    lineNumber: 15,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/pages/productPage/product.js",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "product-details",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "product-name",
+                        children: product.name
+                    }, void 0, false, {
+                        fileName: "src/pages/productPage/product.js",
+                        lineNumber: 18,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "product-description",
+                        children: product.description
+                    }, void 0, false, {
+                        fileName: "src/pages/productPage/product.js",
+                        lineNumber: 19,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "product-price",
+                        children: product.price
+                    }, void 0, false, {
+                        fileName: "src/pages/productPage/product.js",
+                        lineNumber: 20,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "product-actions",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "buy-button",
+                                children: "Buy Now"
+                            }, void 0, false, {
+                                fileName: "src/pages/productPage/product.js",
+                                lineNumber: 22,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "cart-button",
+                                children: "Add to Cart"
+                            }, void 0, false, {
+                                fileName: "src/pages/productPage/product.js",
+                                lineNumber: 23,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/productPage/product.js",
+                        lineNumber: 21,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/productPage/product.js",
+                lineNumber: 17,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/productPage/product.js",
+        lineNumber: 13,
+        columnNumber: 9
+    }, undefined);
+};
+_c = ProductInfo;
+exports.default = ProductInfo;
+var _c;
+$RefreshReg$(_c, "ProductInfo");
+
+  $parcel$ReactRefreshHelpers$aa58.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequirec41b")
 
 //# sourceMappingURL=index.5baa4167.js.map
