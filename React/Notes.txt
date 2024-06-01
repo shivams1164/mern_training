@@ -26,3 +26,28 @@ Webpack in react is a JavaScript module bundler that is commonly used with React
 
 Building a web app with Parcel
 
+
+
+------------------------------------Day 1------------------------------------------------------
+
+
+ npm i react-router-dom
+
+
+ import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+
+undefin
+
+optional chaining
+
+
+usestate and useeffect
+
+
+debouncing in javascript
+
+

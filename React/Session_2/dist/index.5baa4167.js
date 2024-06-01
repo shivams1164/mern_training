@@ -2986,6 +2986,15 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 //         </div>
 //     )
 // }
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import HomepageSearch from './src/pages/searchpage/homepageSearch';
+// const parent = document.getElementById('root');
+// const root = ReactDOM.createRoot(parent);
+// const App = () => {
+//     return (<HomepageSearch/>)
+// }
+// root.render(<App />)
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactDom = require("react-dom");
@@ -3026,17 +3035,17 @@ const App = ()=>{
         children: [
             path === "/" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageDefault.default), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 88,
+                lineNumber: 108,
                 columnNumber: 30
             }, undefined),
             path === "/products" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productMainPageDefault.default), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 89,
+                lineNumber: 109,
                 columnNumber: 38
             }, undefined),
             path === "/search" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageSearchDefault.default), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 90,
+                lineNumber: 110,
                 columnNumber: 36
             }, undefined)
         ]
@@ -3045,27 +3054,9 @@ const App = ()=>{
 _c = App;
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "app.js",
-    lineNumber: 94,
+    lineNumber: 114,
     columnNumber: 13
-}, undefined)) // import React from 'react';
- // import ReactDOM from 'react-dom';
- // import HomepageSearch from './src/pages/searchpage/homepageSearch';
- // const parent = document.getElementById('root');
- // const root = ReactDOM.createRoot(parent);
- // const App = () => {
- //     return (<HomepageSearch/>)
- // }
- // root.render(<App />)
- // import React from 'react';
- // import ReactDOM from 'react-dom/client';
- // import ProductMain from './src/pages/productPage/productMainPage';
- // const parent = document.getElementById('root');
- // const root = ReactDOM.createRoot(parent);
- // const App = () => {
- //     return <ProductMain />;
- // }
- // root.render(<App />);
-;
+}, undefined));
 var _c;
 $RefreshReg$(_c, "App");
 
@@ -27332,12 +27323,12 @@ const Homepage = ()=>{
                 lineNumber: 14,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featureProductDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carousalDefault.default), {}, void 0, false, {
                 fileName: "src/pages/homepage/homepage.js",
                 lineNumber: 15,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carousalDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featureProductDefault.default), {}, void 0, false, {
                 fileName: "src/pages/homepage/homepage.js",
                 lineNumber: 16,
                 columnNumber: 13
@@ -27382,7 +27373,7 @@ const Navbar = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "navbar-logo",
-                children: "Navbar"
+                children: "Amazon"
             }, void 0, false, {
                 fileName: "src/pages/homepage/navbar.js",
                 lineNumber: 6,
@@ -27669,7 +27660,7 @@ const CustomCarousel = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: "https://mobirise.com/extensions/commercem4/assets/images/galleries-1-1200x800.png",
+                        src: "https://images-eu.ssl-images-amazon.com/images/G/31/img23/WA/July/PD/XGL/header/comb/eng-mob.gif",
                         alt: "Slide 1"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/carousal.js",
@@ -27692,7 +27683,7 @@ const CustomCarousel = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: "https://assets-global.website-files.com/605826c62e8de87de744596e/618e5e4a383af7f5357ac553_1%20Blog%20Covers%20eCommerce%20image%20carousels-%20The%20good%2C%20the%20bad%2C%20and%20the%20ugly.jpg",
+                        src: "https://digitalsathi.com/wp-content/uploads/2017/08/amazon-todays-deal-banner-expand-4.jpg",
                         alt: "Slide 2"
                     }, void 0, false, {
                         fileName: "src/pages/homepage/carousal.js",

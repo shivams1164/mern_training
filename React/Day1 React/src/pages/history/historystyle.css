@@ -1,0 +1,23 @@
+.history-container {
+    color: rgb(57, 0, 117);
+}
+
+.history-cart {
+    padding: 23px, 34px;
+    font-size: large;
+    border: 1px solid black;
+    background-color: rgb(237, 230, 222);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.inputBox {
+    width: 25%;
+    margin: 23px 5px;
+    height: 30px;
+    display: block;
+
+}

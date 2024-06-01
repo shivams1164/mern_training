@@ -12,8 +12,8 @@ const Homepage = () => {
         <div>
             <Navbar />
             <CategoryRow />
-            <FeatureProduct /> 
             <Carousal />
+            <FeatureProduct /> 
             <Footer />
         </div>
     );

@@ -15,11 +15,11 @@ const CustomCarousel = () => {
     return (
         <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}>
             <div>
-                <img src="https://mobirise.com/extensions/commercem4/assets/images/galleries-1-1200x800.png" alt="Slide 1" />
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/WA/July/PD/XGL/header/comb/eng-mob.gif" alt="Slide 1" />
                 <p className="legend"></p>
             </div>
             <div>
-                <img src="https://assets-global.website-files.com/605826c62e8de87de744596e/618e5e4a383af7f5357ac553_1%20Blog%20Covers%20eCommerce%20image%20carousels-%20The%20good%2C%20the%20bad%2C%20and%20the%20ugly.jpg" alt="Slide 2" />
+                <img src="https://digitalsathi.com/wp-content/uploads/2017/08/amazon-todays-deal-banner-expand-4.jpg" alt="Slide 2" />
                 <p className="legend"></p>
             </div>
             <div>
