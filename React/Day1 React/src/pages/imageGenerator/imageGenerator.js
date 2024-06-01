@@ -1,29 +1,48 @@
 import React, { useState } from 'react';
 import Navbar from "../common/navbar";
 import "./imageGen.css"
+import { useState, useEffect } from "react";
+
 
 
 const ImageGenerator = () => {
-    // let name = "akash";
-    const [name, changeName] = useState("Shivam")
-    const func = (e) => {
-        changeName(e.target.value);
-        console.log(name);
-    }
 
+    // let data = [{ 'id': '1', title: 'hello' }];
+
+    // // const
+    // const getData = async () => {
+    //     const res = await fetch('https://dummyjson.com/products');
+    //     const obj = await res.json();
+    //     // data = obj.products;
+    //     console.log(data);
+
+    const [data, setData] = useState("");
+    const [query, setQuery] = useState();
+
+    const getData = async () => {
+        const res = await fetch(`https://source.unsplash.com/random/400x400/?${query}`);
+        setData(res.url)
+    }
+    useEffect(() => {
+        getData();
+    }, [query])
 
     return (
-        <div>
+        <div >
             <Navbar />
-            <div className="image-generator-container">
-                <div className="image-section">
-                    <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" className="random-image" />
-                    <input className='text-box' type='text' onChange={(e) => func(e)} />
+            <div className="img-container">
+                <h2>Image Generator</h2>
+
+                <div>
+                    <input placeholder={query} id="txtInput" type="text"></input>
+                    <button onClick={() => { setQuery(document.getElementById('txtInput').value) }}>Go</button>
                 </div>
-                {name}
+                {query && <img src={data} alt=" " />}
             </div>
+
         </div>
-    );
+    )
 };
+
 
 export default ImageGenerator;

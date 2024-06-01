@@ -80,7 +80,7 @@ const History = () => {
 
     return (
         <div >
-            <Navbar />
+            <Navbar page="history" />
             <input className="inputBox" onChange={(e) => {
                 setSearchText(e.target.value)
             }} />
