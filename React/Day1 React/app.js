@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom'
 import ImageGenerator from './src/pages/imageGenerator/imageGenerator';
 import HomePage from './src/pages/homePage/homePage';
@@ -9,36 +9,42 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-
-const router = createBrowserRouter([
-
-  {
-    path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "/image-generator",
-    element: <ImageGenerator />
-  },
-  {
-    path: "/history",
-    element: <History />
-  },
-  {
-    path:'/history/:historyId',
-    element:<HistoryInfo/>,
-  }
-]);
-
+import PointsContext from './src/context/PointContext';
 const parent = document.getElementById("root");
 const root = ReactDOM.createRoot(parent);
 
-
 const App = () => {
-  return <RouterProvider router={router} />
 
+  const [userPoints, setUserPoints] = useState(20)
+  const router = createBrowserRouter([
+
+    {
+      path: "/",
+      element: <HomePage  />,
+    },
+    {
+      path: "/image-generator",
+      element: <ImageGenerator  />
+    },
+    {
+      path: "/history",
+      element: <History  />
+    },
+    {
+      path: '/history/:historyId',
+      element: <HistoryInfo  />,
+    }
+  ]);
+
+  const val = {}
+  return (
+    <PointsContext.Provider value={{
+      userPoints: userPoints,
+      setUserPoints: setUserPoints,
+    }}>
+      <RouterProvider router={router} />
+    </PointsContext.Provider>
+  );
 }
 
-
 root.render(<App />);
-
