@@ -51,3 +51,65 @@ usestate and useeffect
 debouncing in javascript
 
 
+context
+
+---------------------------------------
+
+DOM 
+event Loop 
+Promises
+callBack
+array and string function
+
+trotting
+flag
+array-->obj
+obj--->array
+deep copy
+function n variable how to handle
+
+---------------------------------------
+Backend
+----
+Overview -> bandwidth, latency, response time,....
+NodeJ0s-> file system ,http, fs, socket
+Nodejs and Express major differnce
+Express--> Middleware chaining, templete engine
+API get,post,put,patch, delete
+Schema-->  for Project Chat Application using mongodb
+modules for express server
+------------------------------------
+
+React
+
+redux 
+useState And useEffect
+use Ref
+use Memo
+use Callback
+context api
+redux
+--------------------------------
+
+FrontEnd
+
+NexJS  
+--------------
+JWT
+--------------
+Local Stoages
+-------------
+cookies and http only 
+------------------
+destructring and 
+
+
+------------------------------
+Akshay saini
+------------------------------
+web dev simplified
+------------------------------
+project
+
+chat Application
+file sharing
