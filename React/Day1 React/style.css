@@ -1,3 +1,7 @@
+* {
+    background-color: rgb(87, 81, 81);
+}
+
 .header-parent-container {
     display: flex;
     justify-content: space-between;

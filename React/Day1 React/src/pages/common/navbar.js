@@ -27,10 +27,10 @@
 // }
 // export default Navbar
 
-import {useContext} from "react";
+import { useContext } from "react";
 import PointsContext from '../../context/PointContext';
 import "./navbar.css";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = (props) => {
@@ -39,21 +39,26 @@ const Navbar = (props) => {
     const page = props.page;
 
     const customColor = (x) => {
-        return {color: page=== x ?'red':'white'}
+        return { color: page === x ? 'red' : 'white' }
     }
 
-    return(
+    return (
         <div className='header-parent-container'>
             <div className='left'>
                 <Link to="/" style={customColor('home')}>Home</Link>
                 <Link to="/image-generator" style={customColor('imageGenerator')} >Image Generator</Link>
-                <Link to="/history"  style={customColor('history')}>History</Link>
+                <Link to="/history" style={customColor('history')}>History</Link>
                 <Link to="/contact" >Contact Us</Link>
                 <Link to="/help" >Help</Link>
+                <Link to="/signup" style={customColor('signup')}>Signup</Link>
             </div>
-            <div className="right" style={{padding: '4px', color: 'brown'}}>
+            <div className="right" style={{ padding: '4px', color: 'brown' }}>
                 {contextValues.userPoints}
             </div>
+            {contextValues.isLoggedIn ?
+                <button onClick={contextValues.logout}>Logout</button>
+                : <button onClick={contextValues.login}>Login</button>
+            }
         </div>
     )
 }
